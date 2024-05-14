@@ -93,5 +93,12 @@ def main():
     bb.add(image, 864, 51, 959, 266, "Male", "blue")
     show_and_save("POBB", image, out_path)
 
+    in_path = os.path.join("docs", "images", "globe.jpg")
+    out_path = os.path.join("docs", "images", "globe_bb.png")
+    image = cv2.imread(in_path, cv2.IMREAD_COLOR)
+    bb.add(image, 721, 312, 721 + 92, 312 + 32, "Big Text", "olive", 30)
+    bb.add(image, 824, 893, 824 + 125, 893 + 89, "Small Text", "red", 15)
+    show_and_save("Globe and a Magnifying Glass", image, out_path)
+
 if __name__ == "__main__":
     main()

@@ -48,7 +48,7 @@ from bounding_box import bounding_box as bb
 
 Then, just add the bounding box on an image.
  ```python
-bb.add(image, left, top, right, bottom, label, color)
+bb.add(image, left, top, right, bottom, label, color, size)
 ```
 
 This method takes 5 mandatory parameters:
@@ -70,6 +70,7 @@ If `label` is specified and `color` is not, then a color depending
 on the `label` is randomly chosen.
 If neither `color` and `label` is specified then the bounding box
 color is defaulted to `green`.
+- `size`: A integer representing the label's font size. Defaults to 15px.
 
 ## Examples
 The script to plot exemples of this **README** is available
